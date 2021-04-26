@@ -57,15 +57,6 @@ main#home .cover-container .box-cover {
   height: 400px;
   padding: 30px 20px;
 }
-main#home .cover-container .box-cover.bg-purple {
-  background-color: #3c1567;
-}
-main#home .cover-container .box-cover.bg-grey {
-  background-color: #3c3c3c;
-}
-main#home .cover-container .box-cover.bg-blue {
-  background-color: #0072bc;
-}
 main#home .cover-container .box-cover#drake, main#home .cover-container .box-cover#mushroom, main#home .cover-container .box-cover#office {
   background-position: center;
   background-size: cover;
@@ -107,6 +98,18 @@ a {
   text-decoration: none;
 }
 
+.bg-purple {
+  background-color: #3c1567;
+}
+
+.bg-grey {
+  background-color: #3c3c3c;
+}
+
+.bg-blue {
+  background-color: #0072bc;
+}
+
 header {
   background-color: #101010;
   height: 120px;
@@ -131,4 +134,66 @@ header nav ul {
 }
 header nav .logo {
   background-color: red;
+}
+
+footer .menu-nav {
+  background-color: #ececec;
+  padding: 50px 0 30px;
+  padding-left: 10%;
+  padding-right: 10%;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+footer .menu-nav ul {
+  flex-basis: calc(100% / 4);
+  padding: 0 10px;
+}
+footer .menu-nav ul li {
+  font-size: 14px;
+  color: #4d4d4d;
+}
+footer .menu-nav ul li h3 {
+  color: black;
+  font-size: 18px;
+}
+footer .menu-nav .social {
+  margin-top: 20px;
+}
+footer .menu-nav .social li {
+  display: inline-block;
+  font-size: 35px;
+}
+footer .menu-nav .social li .fa-instagram-square {
+  color: #e4405f;
+}
+footer .menu-nav .social li .fa-facebook-square {
+  color: #3b5998;
+}
+footer .menu-nav .social li .fa-twitter-square {
+  color: #1da1f2;
+}
+footer .menu-nav .social li .fa-youtube-square {
+  color: #cd201f;
+}
+footer .menu-nav .social li .fa-pinterest-square {
+  color: #bd081c;
+}
+footer .menu-nav .social li .fa-rss-square {
+  color: #ff8d00;
+}
+footer .privacy {
+  padding: 10px 0 20px;
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: #1e1e1e;
+  display: flex;
+  justify-content: space-between;
+}
+footer .privacy img {
+  margin: 0 10px;
+  vertical-align: middle;
+}
+footer .privacy ul li {
+  display: inline-block;
 }
