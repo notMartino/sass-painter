@@ -1,0 +1,51 @@
+@import 'partials/variables';
+@import 'partials/home';
+
+// Proprietà generali
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #e8e8e8;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+
+// Proprietà header
+header{
+    background-color: $primary-dark;
+    height: 120px;
+    color: white;
+    padding: 20px 0;
+    @include centered;
+
+    ul{
+        display: inline-block;
+    }
+
+    #user-menu {
+        ul{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            height: 30px;
+        }
+    }
+
+    nav{
+        ul{
+            height: 50px;
+            display: flex;
+            align-items: center;
+        }
+        .logo{
+            background-color: red;
+        }
+    }
+}

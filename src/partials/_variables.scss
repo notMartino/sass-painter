@@ -1,0 +1,20 @@
+// Mix-in
+@mixin centered {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+@mixin lable-pad($padX, $padY){
+    padding: $padX $padY;
+}
+
+@mixin learn-btn {
+    @include lable-pad(9px, 15px);
+    background-color: white;
+    color: #333333;
+    display: inline-block;
+}
+
+// Variabili
+$primary-dark: #101010;
+$link-blue: #00a8ff;

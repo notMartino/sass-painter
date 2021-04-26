@@ -1,0 +1,97 @@
+main#home{
+    overflow-x: hidden;
+    .jumbo{
+        height: 400px;
+        overflow: hidden;
+        background-color: crimson;
+        background-image: url('img/bg-painter-home.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .paint-possibilities{
+        padding: 30px 0 50px;
+        @include centered;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px -10px;
+
+        h2{
+            font-weight: normal;
+            text-align: center;
+            margin: 30px 0;
+            flex-basis: 100%;
+        }
+
+        .box-label{
+            flex-basis: calc((100% / 3) - 20px);
+            overflow-x: hidden;
+            margin: 0 10px;
+            img{
+                width: 100%;
+                vertical-align: middle;
+            }
+            
+            .text{
+                background-color: white;
+                h3{
+                    font-weight: normal;
+                }
+                p{
+                    margin: 20px 0;
+                }
+                a{
+                    color: $link-blue;
+                }
+                @include lable-pad(20px, 30px);
+            }
+        }
+    }
+
+    .cover-container{
+        @include centered;
+        display: flex;
+        flex-wrap: wrap;
+        color: white;
+
+        .box-cover{
+            flex-basis: 50%;
+            height: 400px;
+            @include lable-pad(30px, 20px);
+            // &:not(.image){
+            //     @include lable-pad(30px, 20px);
+            // }
+
+            &.bg-purple{
+                background-color: #3c1567;
+            }
+            &.bg-grey{
+                background-color: #3c3c3c;
+            }
+            &.bg-blue{
+                background-color: #0072bc;
+            }
+
+            &#drake, &#mushroom, &#office{
+                background-position: center;
+                background-size: cover;
+            }
+            &#drake{
+                background-image: url('img/painter-master.jpg');
+            }
+            &#mushroom{
+                background-image: url('img/wacom-painter.jpg');
+            }
+            &#office{
+                background-image: url('img/business-education.jpg');
+            }
+
+            p{
+                margin: 20px 0;
+            }
+            a{
+                @include learn-btn;
+            }
+        }
+    }
+}

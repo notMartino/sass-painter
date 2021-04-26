@@ -1,0 +1,134 @@
+main#home {
+  overflow-x: hidden;
+}
+main#home .jumbo {
+  height: 400px;
+  overflow: hidden;
+  background-color: crimson;
+  background-image: url("img/bg-painter-home.jpg");
+  background-size: cover;
+  background-position: center;
+}
+main#home .paint-possibilities {
+  padding: 30px 0 50px;
+  padding-left: 10%;
+  padding-right: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px -10px;
+}
+main#home .paint-possibilities h2 {
+  font-weight: normal;
+  text-align: center;
+  margin: 30px 0;
+  flex-basis: 100%;
+}
+main#home .paint-possibilities .box-label {
+  flex-basis: calc((100% / 3) - 20px);
+  overflow-x: hidden;
+  margin: 0 10px;
+}
+main#home .paint-possibilities .box-label img {
+  width: 100%;
+  vertical-align: middle;
+}
+main#home .paint-possibilities .box-label .text {
+  background-color: white;
+  padding: 20px 30px;
+}
+main#home .paint-possibilities .box-label .text h3 {
+  font-weight: normal;
+}
+main#home .paint-possibilities .box-label .text p {
+  margin: 20px 0;
+}
+main#home .paint-possibilities .box-label .text a {
+  color: #00a8ff;
+}
+main#home .cover-container {
+  padding-left: 10%;
+  padding-right: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+}
+main#home .cover-container .box-cover {
+  flex-basis: 50%;
+  height: 400px;
+  padding: 30px 20px;
+}
+main#home .cover-container .box-cover.bg-purple {
+  background-color: #3c1567;
+}
+main#home .cover-container .box-cover.bg-grey {
+  background-color: #3c3c3c;
+}
+main#home .cover-container .box-cover.bg-blue {
+  background-color: #0072bc;
+}
+main#home .cover-container .box-cover#drake, main#home .cover-container .box-cover#mushroom, main#home .cover-container .box-cover#office {
+  background-position: center;
+  background-size: cover;
+}
+main#home .cover-container .box-cover#drake {
+  background-image: url("img/painter-master.jpg");
+}
+main#home .cover-container .box-cover#mushroom {
+  background-image: url("img/wacom-painter.jpg");
+}
+main#home .cover-container .box-cover#office {
+  background-image: url("img/business-education.jpg");
+}
+main#home .cover-container .box-cover p {
+  margin: 20px 0;
+}
+main#home .cover-container .box-cover a {
+  padding: 9px 15px;
+  background-color: white;
+  color: #333333;
+  display: inline-block;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e8e8e8;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: #101010;
+  height: 120px;
+  color: white;
+  padding: 20px 0;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+header ul {
+  display: inline-block;
+}
+header #user-menu ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 30px;
+}
+header nav ul {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+header nav .logo {
+  background-color: red;
+}
