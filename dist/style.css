@@ -27,20 +27,21 @@ main#home .paint-possibilities .box-label {
   flex-basis: calc((100% / 3) - 20px);
   overflow-x: hidden;
   margin: 0 10px;
+  background-color: white;
 }
 main#home .paint-possibilities .box-label img {
   width: 100%;
   vertical-align: middle;
 }
 main#home .paint-possibilities .box-label .text {
-  background-color: white;
   padding: 20px 30px;
 }
 main#home .paint-possibilities .box-label .text h3 {
-  font-weight: normal;
+  font-weight: 600;
 }
 main#home .paint-possibilities .box-label .text p {
   margin: 20px 0;
+  font-size: 15px;
 }
 main#home .paint-possibilities .box-label .text a {
   color: #00a8ff;
@@ -88,6 +89,7 @@ main#home .cover-container .box-cover a {
 
 body {
   background-color: #e8e8e8;
+  font-family: "Montserrat", sans-serif;
 }
 
 ul {
@@ -112,9 +114,9 @@ a {
 
 header {
   background-color: #101010;
-  height: 120px;
+  height: 100px;
   color: white;
-  padding: 20px 0;
+  padding: 10px 0 20px;
   padding-left: 10%;
   padding-right: 10%;
 }
@@ -127,13 +129,33 @@ header #user-menu ul {
   align-items: center;
   height: 30px;
 }
+header #user-menu ul li {
+  margin-left: 20px;
+  font-size: 13px;
+}
+header #user-menu ul li a {
+  color: #989898;
+}
+header #user-menu ul li i {
+  font-size: 18px;
+  vertical-align: middle;
+  color: #009cff;
+  margin-right: 5px;
+}
 header nav ul {
   height: 50px;
   display: flex;
   align-items: center;
 }
-header nav .logo {
-  background-color: red;
+header nav ul li {
+  margin-right: 30px;
+  font-size: 15px;
+}
+header nav ul li a {
+  color: white;
+}
+header nav ul li i {
+  color: grey;
 }
 
 footer .menu-nav {
@@ -152,17 +174,25 @@ footer .menu-nav ul {
 footer .menu-nav ul li {
   font-size: 14px;
   color: #4d4d4d;
+  margin: 12px 0;
 }
 footer .menu-nav ul li h3 {
   color: black;
-  font-size: 18px;
+  font-weight: 500;
+}
+footer .menu-nav ul li a {
+  color: #4d4d4d;
+  font-size: 13px;
 }
 footer .menu-nav .social {
   margin-top: 20px;
 }
 footer .menu-nav .social li {
   display: inline-block;
+}
+footer .menu-nav .social li .fab, footer .menu-nav .social li .fas {
   font-size: 35px;
+  margin-right: 5px;
 }
 footer .menu-nav .social li .fa-instagram-square {
   color: #e4405f;
