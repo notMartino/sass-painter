@@ -8,11 +8,13 @@
     padding: $padX $padY;
 }
 
-@mixin learn-btn {
+@mixin learn-btn($background, $text-color) {
     @include lable-pad(9px, 15px);
-    background-color: white;
-    color: #333333;
+    background-color: $background;
+    color: $text-color;
+    border: 1px solid $background;
     display: inline-block;
+    margin-bottom: 10px;
 }
 
 // Variabili

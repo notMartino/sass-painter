@@ -7,6 +7,39 @@ main#home{
         background-image: url('img/bg-painter-home.jpg');
         background-size: cover;
         background-position: center;
+        padding: 50px 0;
+        @include centered;
+        overflow: hidden;
+
+        .jumbo-text{
+            img{
+                width: 200px;
+            }
+            p{
+                font-weight: 500;
+                margin: 30px 0;
+            }
+            p.pink-offer{
+                color: #c70eb8;
+                font-weight: 500;
+                font-size: 14px;
+                font-style: italic;
+                line-height: 25px;
+                margin: 30px 0;
+                strong{
+                    font-size: 15px;
+                }
+            }
+
+            a{
+                @include learn-btn(#020201, white);
+                margin-right: 20px;
+            }
+            a.alternative{
+                @include learn-btn(transparent, #020201);
+                border: 1px solid #020201;
+            }
+        }
     }
 
     .paint-possibilities{
@@ -59,20 +92,7 @@ main#home{
         .box-cover{
             flex-basis: 50%;
             height: 400px;
-            @include lable-pad(30px, 20px);
-            // &:not(.image){
-            //     @include lable-pad(30px, 20px);
-            // }
-
-            // &.bg-purple{
-            //     background-color: #3c1567;
-            // }
-            // &.bg-grey{
-            //     background-color: #3c3c3c;
-            // }
-            // &.bg-blue{
-            //     background-color: #0072bc;
-            // }
+            @include lable-pad(60px, 40px);
 
             &#drake, &#mushroom, &#office{
                 background-position: center;
@@ -88,11 +108,15 @@ main#home{
                 background-image: url('img/business-education.jpg');
             }
 
+            h2{
+                font-weight: 500;
+            }
             p{
-                margin: 20px 0;
+                margin: 30px 0;
+                font-weight: 200;
             }
             a{
-                @include learn-btn;
+                @include learn-btn(white, #333333);
             }
         }
     }
