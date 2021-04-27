@@ -42,6 +42,7 @@ header{
         display: inline-block;
     }
 
+    // Lista azioni user
     #user-menu {
         ul{
             display: flex;
@@ -64,6 +65,7 @@ header{
         }
     }
 
+    // Lista nav header
     nav{
         ul{
             height: 50px;
@@ -85,6 +87,7 @@ header{
 
 // Proprietà footer
 footer{
+    // Links nav
     .menu-nav{
         background-color: #ececec;
         padding: 50px 0 30px;
@@ -141,6 +144,7 @@ footer{
         }
     }
 
+    // Sezione footer privacy terms
     .privacy{
         padding: 10px 0 20px;
         @include centered;

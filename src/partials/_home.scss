@@ -42,6 +42,7 @@ main#home{
         }
     }
 
+    // Sezione 3 covers
     .paint-possibilities{
         padding: 30px 0 50px;
         @include centered;
@@ -83,6 +84,7 @@ main#home{
         }
     }
 
+    // Sezione cover/cover-img
     .cover-container{
         @include centered;
         display: flex;
@@ -94,10 +96,12 @@ main#home{
             height: 400px;
             @include lable-pad(60px, 40px);
 
+            // Poprietà generali imgs cover
             &#drake, &#mushroom, &#office{
                 background-position: center;
                 background-size: cover;
             }
+            //Proprietà specifiche imgs cover
             &#drake{
                 background-image: url('img/painter-master.jpg');
             }

@@ -1,13 +1,15 @@
 // Mix-in
+// Centratura pagina
 @mixin centered {
     padding-left: 10%;
     padding-right: 10%;
 }
-
+// Padding settabile covers
 @mixin lable-pad($padX, $padY){
     padding: $padX $padY;
 }
 
+// Bottone LEARN personalizzato
 @mixin learn-btn($background, $text-color) {
     @include lable-pad(9px, 15px);
     background-color: $background;
@@ -18,5 +20,7 @@
 }
 
 // Variabili
+// Colore header/footer
 $primary-dark: #101010;
+// Colore link blue Learn more
 $link-blue: #00a8ff;
